@@ -9,7 +9,7 @@ const FirmRoutes = require("./routes/FirmRoutes");
 const ProductRoutes = require("./routes/ProductRoutes");
 const path = require("path");
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
   console.log(`server started and running at ${PORT}`);
